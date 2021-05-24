@@ -1,0 +1,23 @@
+[app]
+name = "tempodoloe"
+
+[server]
+host = "localhost"
+port = 4001
+read_timeout = 5
+write_timeout = 10
+idle_timeout = 5
+
+[database.pgsql]
+is_active = true
+host = "localhost"
+port = 5432
+username = "temporal"
+password = "temporal"
+db_name = "o2o"
+max_pool_size = 10
+sslmode = "disable"
+
+[temporal]
+host = "localhost"
+port = 7233
