@@ -1,6 +1,27 @@
-This is a example code of temporal.io.
+[![Coverage Status](https://coveralls.io/repos/github/harunnryd/tempokerja/badge.svg?branch=master)](https://coveralls.io/github/harunnryd/tempokerja?branch=master)
+
+# Tempokerja  
+
+This is a example code of temporal.io (Microservice Orchestrator).
+
+## Flow
+
+![tempokerja_plantuml](https://user-images.githubusercontent.com/26010633/119280964-eb43c680-bc5d-11eb-8919-cbf84155f840.png)
 
 ## Basic usage
+
+**Manual Test**
+```bash
+foo@bar:~$ curl --request POST \
+  --url http://localhost:3999/v1/orders \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"product_id": 1,
+	"origin_id": 2,
+	"destination_id": 1,
+	"quantity": 2
+}'
+```
 
 **Create Table**
 ```sql
